@@ -140,7 +140,10 @@
             <input type="phone" id="phone" name="phone" placeholder="Enter Phone Number"><br>
             <label for="message">Message</label><br>
             <input form="contact-form" type="textarea" id="message" name="message" placeholder="Enter Message"><br>
-            <button class="submit-button" type="submit" form="contact-form" value="Submit">Submit Form</button>
+            <button class="g-recaptcha submit-button"
+            data-sitekey="reCAPTCHA_site_key"
+            data-callback='onSubmit'
+            data-action='submit' type="submit" form="contact-form" value="Submit">Submit Form</button>
           </form>
         </div>
       </div>
@@ -187,6 +190,14 @@
       </div>
     </footer>
   </main>
+
+  <!-- Google ReCaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script>
 
 </body>
 </html>

@@ -599,7 +599,7 @@ button a {
 
 .contact-form-wrapper form label {
   font-weight: 400;
-  margin-bottom: 5px;;
+  margin-bottom: 5px;
 }
 
 .contact-form-wrapper form input {
@@ -613,7 +613,7 @@ button a {
   background-color: hsla(0, 0%, 100%, 0);
   color: #fff;
   width: 95%;
-  margin-bottom: 0 auto 20px auto
+  margin: 0 auto 20px auto;
 }
 
 .contact-form-wrapper form input::placeholder {
