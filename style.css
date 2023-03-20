@@ -563,6 +563,7 @@ button a {
 
 .reverse {
   transform: scaleX(-1);
+  margin-top: 20px;
 }
 
 .grid-logo-wrap {
